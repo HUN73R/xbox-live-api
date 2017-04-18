@@ -542,7 +542,6 @@ public:
     reputation_feedback_item(
         _In_ string_t xboxUserId,
         _In_ reputation_feedback_type reputationFeedbackType,
-        _In_ xbox::services::multiplayer::multiplayer_session_reference sessionRef = xbox::services::multiplayer::multiplayer_session_reference(),
         _In_ string_t reasonMessage = string_t(),
         _In_ string_t evidenceResourceId = string_t()
         );

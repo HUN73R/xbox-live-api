@@ -72,24 +72,16 @@ ReputationFeedbackItem::ReputationFeedbackItem()
 ReputationFeedbackItem::ReputationFeedbackItem(
     _In_ Platform::String^ xboxUserId,
     _In_ ReputationFeedbackType reputationFeedbackType,
-    _In_ Xbox::Services::Multiplayer::MultiplayerSessionReference^ sessionRef,
     _In_ Platform::String^ reasonMessage,
     _In_ Platform::String^ evidenceResourceId
     ) :
     m_cppObj(
         STRING_T_FROM_PLATFORM_STRING(xboxUserId), 
         static_cast<reputation_feedback_type>(reputationFeedbackType),
-        sessionRef == nullptr ? xbox::services::multiplayer::multiplayer_session_reference() : sessionRef->GetCppObj(),
         STRING_T_FROM_PLATFORM_STRING(reasonMessage), 
         STRING_T_FROM_PLATFORM_STRING(evidenceResourceId)
         )
 {
-    m_sessionRef = sessionRef;
-}
-
-Xbox::Services::Multiplayer::MultiplayerSessionReference^ ReputationFeedbackItem::SessionReference::get()
-{ 
-    return m_sessionRef;
 }
 
 xbox::services::social::reputation_feedback_item ReputationFeedbackItem::GetCppObj() const

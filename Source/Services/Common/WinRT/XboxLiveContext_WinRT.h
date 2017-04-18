@@ -12,18 +12,13 @@
 #include "Achievementservice_WinRT.h"
 #include "LeaderboardService.h"
 #include "UserStatisticsService_WinRT.h"
-#include "MultiplayerService_WinRT.h"
-#include "MatchmakingService_WinRT.h"
-#include "TournamentService_WinRT.h"
 #include "XboxLiveContextSettings_WinRT.h"
 #include "RealTimeActivityService_WinRT.h"
 #include "PresenceService_WinRT.h"
 #include "TitleStorageService_WinRT.h"
-#include "GameServerPlatformService_WinRT.h"
 #include "PrivacyService_WinRT.h"
 #include "StringService_WinRT.h"
 #include "EventsService_WinRT.h"
-#include "ContextualSearchService_WinRT.h"
 #if TV_API || UNIT_TEST_SERVICES
 #include "CatalogService_WinRT.h"
 #include "InventoryService_WinRT.h"
@@ -93,21 +88,6 @@ public:
     property UserStatistics::UserStatisticsService^ UserStatisticsService { UserStatistics::UserStatisticsService^ get(); }
 
     /// <summary>
-    /// Returns object containing access methods to the Xbox Matchmaking service.
-    /// </summary>
-    property Matchmaking::MatchmakingService^ MatchmakingService { Matchmaking::MatchmakingService^ get(); }
-    
-    /// <summary>
-    /// Returns object containing access methods to the Xbox Multiplayer service.
-    /// </summary>
-    property Multiplayer::MultiplayerService^ MultiplayerService { Multiplayer::MultiplayerService^ get(); }
-
-    /// <summary>
-    /// Returns object containing access methods to the Xbox Tournament service.
-    /// </summary>
-    property Tournaments::TournamentService^ TournamentService { Tournaments::TournamentService^ get(); }
-
-    /// <summary>
     /// Returns object containing access methods to the Xbox Real Time Activity service.
     /// </summary>
     property RealTimeActivity::RealTimeActivityService^ RealTimeActivityService { RealTimeActivity::RealTimeActivityService^ get(); }
@@ -116,11 +96,6 @@ public:
     /// Returns object containing access methods to the Presence service.
     /// </summary>
     property Presence::PresenceService^ PresenceService { Presence::PresenceService^ get(); }
-
-    /// <summary>
-    /// Returns object containing access methods to the GameServerPlatform service.
-    /// </summary>
-    property GameServerPlatform::GameServerPlatformService^ GameServerPlatformService { GameServerPlatform::GameServerPlatformService^ get(); }
 
     /// <summary>
     /// Returns object containing access methods to the TitleStorage service.
@@ -136,11 +111,6 @@ public:
     /// Returns object containing access methods to the Xbox String service.
     /// </summary>
     property System::StringService^ StringService { System::StringService^ get(); }
-
-    /// <summary>
-    /// Returns object containing access methods to the contextual search service.
-    /// </summary>
-    property ContextualSearch::ContextualSearchService^ ContextualSearchService { ContextualSearch::ContextualSearchService^ get(); }
 
 #if UWP_API
     /// <summary>
@@ -191,15 +161,10 @@ private:
     Achievements::AchievementService^ m_achievementService;
     Leaderboard::LeaderboardService^ m_leaderboardService;
     UserStatistics::UserStatisticsService^ m_userStatisticsService;
-    Multiplayer::MultiplayerService^ m_multiplayerService;
-    Matchmaking::MatchmakingService^ m_matchmakingService;
-    Tournaments::TournamentService^ m_tournamentService;
     RealTimeActivity::RealTimeActivityService^ m_realTimeActivityService;
     Presence::PresenceService^ m_presenceService;
-    GameServerPlatform::GameServerPlatformService^ m_gameServerPlatformService;
     TitleStorage::TitleStorageService^ m_titleStorageService;
     Privacy::PrivacyService^ m_privacyService;
-    ContextualSearch::ContextualSearchService^ m_contextualSearchService;
     System::StringService^ m_stringService;
 #if UWP_API
     Events::EventsService^ m_eventsService;

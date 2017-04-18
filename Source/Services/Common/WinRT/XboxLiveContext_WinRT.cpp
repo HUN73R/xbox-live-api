@@ -90,28 +90,14 @@ XboxLiveContext::Initialize()
         m_cppObj->real_time_activity_service()
         );
 
-    m_multiplayerService = ref new Multiplayer::MultiplayerService(
-        m_cppObj->multiplayer_service()
-        );
-
-    m_tournamentService = ref new Tournaments::TournamentService(
-        m_cppObj->tournament_service()
-        );
 
     m_userStatisticsService = ref new UserStatistics::UserStatisticsService(
         m_cppObj->user_statistics_service()
         );
 
-    m_matchmakingService = ref new Matchmaking::MatchmakingService(
-        m_cppObj->matchmaking_service()
-        );
 
     m_presenceService = ref new Presence::PresenceService(
         m_cppObj->presence_service()
-        );
-
-    m_gameServerPlatformService = ref new GameServerPlatform::GameServerPlatformService(
-        m_cppObj->game_server_platform_service()
         );
 
     m_titleStorageService = ref new TitleStorage::TitleStorageService(
@@ -149,9 +135,6 @@ XboxLiveContext::Initialize()
         m_cppObj->string_service()
         );
 
-    m_contextualSearchService = ref new ContextualSearch::ContextualSearchService(
-        m_cppObj->contextual_search_service()
-        );
 }
 
 Social::ProfileService^ 
@@ -190,24 +173,6 @@ XboxLiveContext::UserStatisticsService::get()
     return m_userStatisticsService;
 }
 
-Multiplayer::MultiplayerService^ 
-XboxLiveContext::MultiplayerService::get()
-{
-    return m_multiplayerService;
-}
-
-Matchmaking::MatchmakingService^
-XboxLiveContext::MatchmakingService::get()
-{
-    return m_matchmakingService;
-}
-
-Tournaments::TournamentService^
-XboxLiveContext::TournamentService::get()
-{
-    return m_tournamentService;
-}
-
 RealTimeActivity::RealTimeActivityService^
 XboxLiveContext::RealTimeActivityService::get()
 {
@@ -218,12 +183,6 @@ Presence::PresenceService^
 XboxLiveContext::PresenceService::get()
 {
     return m_presenceService;
-}
-
-GameServerPlatform::GameServerPlatformService^
-XboxLiveContext::GameServerPlatformService::get()
-{
-    return m_gameServerPlatformService;
 }
 
 TitleStorage::TitleStorageService^
@@ -242,12 +201,6 @@ System::StringService^
 XboxLiveContext::StringService::get()
 {
     return m_stringService;
-}
-
-ContextualSearch::ContextualSearchService^
-XboxLiveContext::ContextualSearchService::get()
-{
-    return m_contextualSearchService;
 }
 
 #if UWP_API

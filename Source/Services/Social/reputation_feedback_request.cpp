@@ -61,14 +61,6 @@ reputation_feedback_request::serialize_batch_feedback_request(
         itemJson[_T("titleId")] = web::json::value::null();
 
         web::json::value sessionRefJson;
-        if (!feedbackItem.session_reference().is_null())
-        {
-            sessionRefJson[_T("scid")] = web::json::value::string(feedbackItem.session_reference().service_configuration_id());
-            sessionRefJson[_T("templateName")] = web::json::value::string(feedbackItem.session_reference().session_template_name());
-            sessionRefJson[_T("name")] = web::json::value::string(feedbackItem.session_reference().session_name());
-            itemJson[_T("sessionRef")] = sessionRefJson;
-        }
-        else
         {
             itemJson[_T("sessionRef")] = web::json::value::null();
         }
@@ -156,13 +148,11 @@ reputation_feedback_item::reputation_feedback_item() :
 reputation_feedback_item::reputation_feedback_item(
     _In_ string_t xboxUserId,
     _In_ reputation_feedback_type reputationFeedbackType,
-    _In_ xbox::services::multiplayer::multiplayer_session_reference sessionRef,
     _In_ string_t reasonMessage,
     _In_ string_t evidenceResourceId
     ) : 
     m_xboxUserId(std::move(xboxUserId)), 
     m_reputationFeedbackType(reputationFeedbackType),
-    m_sessionRef(std::move(sessionRef)),
     m_reasonMessage(std::move(reasonMessage)),
     m_evidenceResourceId(std::move(evidenceResourceId))
 {
@@ -178,12 +168,6 @@ reputation_feedback_type
 reputation_feedback_item::feedback_type() const
 {
     return m_reputationFeedbackType;
-}
-
-const xbox::services::multiplayer::multiplayer_session_reference& 
-reputation_feedback_item::session_reference() const
-{
-    return m_sessionRef;
 }
 
 const string_t& 

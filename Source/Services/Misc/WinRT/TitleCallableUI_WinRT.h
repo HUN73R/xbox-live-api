@@ -5,7 +5,6 @@
 #include "pch.h"
 #include "xsapi/system.h"
 #include "xsapi/title_callable_ui.h"
-#include "MultiplayerSessionReference_WinRT.h"
 
 NAMESPACE_MICROSOFT_XBOX_SERVICES_SYSTEM_BEGIN
 
@@ -111,25 +110,6 @@ public:
         );
 
     /// <summary>
-    /// Shows a picker UI populated from the selected user's friend list and suggested friend list. 
-    /// After selection, the user can send an invitation to play a game and/or party chat for a 
-    /// specified game session to the selected people.
-    /// </summary>
-    /// <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
-    /// <param name="contextStringId">The custom context string ID.  This string ID is defined 
-    /// during Xbox Live ingestion to identify the invitation text that is additional to the standard 
-    /// invitation text. The ID string must be prefixed with "///".  Pass an empty string if 
-    /// you don't want a custom string added to the invite.</param>
-    /// <returns>
-    /// An interface for tracking the progress of the asynchronous call.
-    /// The operation completes when the UI is closed.
-    /// </returns>
-    static Windows::Foundation::IAsyncAction^ ShowGameInviteUIAsync(
-        _In_ Xbox::Services::Multiplayer::MultiplayerSessionReference^ sessionReference,
-        _In_ Platform::String^ contextStringId
-        );
-
-    /// <summary>
     /// Shows UI displaying the profile card for a specified user.
     /// </summary>
     /// <param name="targetXboxUserId">The Xbox User ID to show information about.</param>
@@ -216,27 +196,6 @@ public:
         _In_ Windows::Foundation::Collections::IVectorView<Platform::String^>^ preselectedXboxUserIds,
         _In_ uint32_t minSelectionCount,
         _In_ uint32_t maxSelectionCount,
-        _In_ Windows::System::User^ user
-        );
-
-    /// <summary>
-    /// Shows a picker UI populated from the selected user's friend list and suggested friend list. 
-    /// After selection, the user can send an invitation to play a game and/or party chat for a 
-    /// specified game session to the selected people.
-    /// </summary>
-    /// <param name="sessionReference">A reference to the multiplayer session to invite people to.</param>
-    /// <param name="contextStringId">The custom context string ID.  This string ID is defined 
-    /// during Xbox Live ingestion to identify the invitation text that is additional to the standard 
-    /// invitation text. The ID string must be prefixed with "///".  Pass an empty string if 
-    /// you don't want a custom string added to the invite.</param>
-    /// <param name="user">System user that identifies which user is sending the invite</param>
-    /// <returns>
-    /// An interface for tracking the progress of the asynchronous call.
-    /// The operation completes when the UI is closed.
-    /// </returns>
-    static Windows::Foundation::IAsyncAction^ ShowGameInviteUIForUserAsync(
-        _In_ Xbox::Services::Multiplayer::MultiplayerSessionReference^ sessionReference,
-        _In_ Platform::String^ contextStringId,
         _In_ Windows::System::User^ user
         );
 

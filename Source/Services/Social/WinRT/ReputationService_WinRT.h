@@ -5,7 +5,6 @@
 #include "shared_macros.h"
 #include "Macros_WinRT.h"
 #include "ReputationFeedbackType_WinRT.h"
-#include "MultiplayerSessionReference_WinRT.h"
 
 NAMESPACE_MICROSOFT_XBOX_SERVICES_SOCIAL_BEGIN
 
@@ -28,7 +27,6 @@ public:
     ReputationFeedbackItem(
         _In_ Platform::String^ xboxUserId,
         _In_ ReputationFeedbackType reputationFeedbackType,
-        _In_ Microsoft::Xbox::Services::Multiplayer::MultiplayerSessionReference^ sessionReference,
         _In_ Platform::String^ reasonMessage,
         _In_ Platform::String^ evidenceResourceId
         );
@@ -44,11 +42,6 @@ public:
     DEFINE_PROP_GET_ENUM_OBJ(FeedbackType, feedback_type, ReputationFeedbackType);
 
     /// <summary>
-    /// The reference to the multiplayer session directory session the user is sending feedback from.
-    /// </summary>
-    property Microsoft::Xbox::Services::Multiplayer::MultiplayerSessionReference^ SessionReference { Microsoft::Xbox::Services::Multiplayer::MultiplayerSessionReference^ get(); }
-
-    /// <summary>
     /// User supplied text added to explain the reason for the feedback.
     /// </summary>
     DEFINE_PROP_GET_STR_OBJ(ReasonMessage, reason_message);
@@ -62,7 +55,6 @@ internal:
     xbox::services::social::reputation_feedback_item GetCppObj() const;
 
 private:
-    Microsoft::Xbox::Services::Multiplayer::MultiplayerSessionReference^ m_sessionRef;
     xbox::services::social::reputation_feedback_item m_cppObj;
 };
 

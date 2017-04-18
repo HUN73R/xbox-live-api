@@ -94,20 +94,6 @@ public:
     /// </summary>
     user_statistics::user_statistics_service&  user_statistics_service();
 
-    /// <summary>
-    /// A service for managing multiplayer games.
-    /// </summary>
-    multiplayer::multiplayer_service& multiplayer_service();
-
-    /// <summary>
-    /// A service for managing matchmaking sessions.
-    /// </summary>
-    matchmaking::matchmaking_service& matchmaking_service();
-
-    /// <summary>
-    /// A service for managing tournaments.
-    /// </summary>
-    tournaments::tournament_service& tournament_service();
 
     /// <summary>
     /// A service for managing real-time activity.
@@ -196,9 +182,6 @@ private:
     leaderboard::leaderboard_service m_leaderboardService;
     achievements::achievement_service m_achievementService;
     user_statistics::user_statistics_service m_userStatisticsService;
-    multiplayer::multiplayer_service m_multiplayerService;
-    matchmaking::matchmaking_service m_matchmakingService;
-    tournaments::tournament_service m_tournamentService;
     std::shared_ptr<real_time_activity::real_time_activity_service> m_realTimeActivityService;
     presence::presence_service m_presenceService;
     game_server_platform::game_server_platform_service m_gameServerPlatformService;

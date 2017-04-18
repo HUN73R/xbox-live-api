@@ -6,7 +6,6 @@
 #include "xsapi/title_callable_ui.h"
 #include "xsapi/multiplayer.h"
 #include "TitleCallableUI_WinRT.h"
-#include "MultiplayerSessionReference_WinRT.h"
 
 using namespace pplx;
 using namespace Windows::Foundation;
@@ -46,25 +45,6 @@ TitleCallableUI::ShowPlayerPickerUI(
     return ASYNC_FROM_TASK(task);
 }
 
-Windows::Foundation::IAsyncAction^ 
-TitleCallableUI::ShowGameInviteUIAsync(
-    _In_ Xbox::Services::Multiplayer::MultiplayerSessionReference^ sessionReference,
-    _In_ Platform::String^ contextStringId
-    )
-{  
-    THROW_INVALIDARGUMENT_IF_NULL(sessionReference);
-
-    auto task = title_callable_ui::show_game_invite_ui(
-        sessionReference->GetCppObj(),
-        STRING_T_FROM_PLATFORM_STRING(contextStringId)
-        )
-    .then([](xbox_live_result<void> result)
-    {
-        THROW_IF_ERR(result);
-    });
-
-    return ASYNC_FROM_TASK(task);
-}
 
 Windows::Foundation::IAsyncAction^ 
 TitleCallableUI::ShowProfileCardUIAsync(
@@ -173,28 +153,6 @@ TitleCallableUI::ShowPlayerPickerUIForUser(
     {
         THROW_IF_ERR(result);
         return UtilsWinRT::CreatePlatformVectorFromStdVectorString(result.payload())->GetView();
-    });
-
-    return ASYNC_FROM_TASK(task);
-}
-
-Windows::Foundation::IAsyncAction^ 
-TitleCallableUI::ShowGameInviteUIForUserAsync(
-    _In_ Xbox::Services::Multiplayer::MultiplayerSessionReference^ sessionReference,
-    _In_ Platform::String^ contextStringId,
-    _In_ Windows::System::User^ user
-    )
-{  
-    THROW_INVALIDARGUMENT_IF_NULL(sessionReference);
-
-    auto task = title_callable_ui::show_game_invite_ui(
-        sessionReference->GetCppObj(),
-        STRING_T_FROM_PLATFORM_STRING(contextStringId),
-        user
-        )
-    .then([](xbox_live_result<void> result)
-    {
-        THROW_IF_ERR(result);
     });
 
     return ASYNC_FROM_TASK(task);

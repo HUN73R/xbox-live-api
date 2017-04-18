@@ -154,14 +154,11 @@ m_xboxLiveContextSettings = std::make_shared<XBOX_LIVE_NAMESPACE::xbox_live_cont
     m_reputationService = XBOX_LIVE_NAMESPACE::social::reputation_service(m_userContext, m_xboxLiveContextSettings, m_appConfig);
     m_leaderboardService = XBOX_LIVE_NAMESPACE::leaderboard::leaderboard_service(m_userContext, m_xboxLiveContextSettings, m_appConfig);
     m_achievementService = XBOX_LIVE_NAMESPACE::achievements::achievement_service(m_userContext, m_xboxLiveContextSettings, m_appConfig, thisWeakPtr);
-    m_matchmakingService = XBOX_LIVE_NAMESPACE::matchmaking::matchmaking_service(m_userContext, m_xboxLiveContextSettings, m_appConfig);
     m_gameServerPlatformService = XBOX_LIVE_NAMESPACE::game_server_platform::game_server_platform_service(m_userContext, m_xboxLiveContextSettings, m_appConfig);
     m_titleStorageService = XBOX_LIVE_NAMESPACE::title_storage::title_storage_service(m_userContext, m_xboxLiveContextSettings, m_appConfig);
     m_privacyService = XBOX_LIVE_NAMESPACE::privacy::privacy_service(m_userContext, m_xboxLiveContextSettings, m_appConfig);
     m_presenceService = XBOX_LIVE_NAMESPACE::presence::presence_service(m_userContext, m_xboxLiveContextSettings, m_appConfig, m_realTimeActivityService);
     m_userStatisticsService = XBOX_LIVE_NAMESPACE::user_statistics::user_statistics_service(m_userContext, m_xboxLiveContextSettings, m_appConfig, m_realTimeActivityService);
-    m_multiplayerService = XBOX_LIVE_NAMESPACE::multiplayer::multiplayer_service(m_userContext, m_xboxLiveContextSettings, m_appConfig, m_realTimeActivityService);
-    m_tournamentService = XBOX_LIVE_NAMESPACE::tournaments::tournament_service(m_userContext, m_xboxLiveContextSettings, m_appConfig, m_realTimeActivityService);
     m_socialService = XBOX_LIVE_NAMESPACE::social::social_service(m_userContext, m_xboxLiveContextSettings, m_appConfig, m_realTimeActivityService);
     m_contextualSearchService = XBOX_LIVE_NAMESPACE::contextual_search::contextual_search_service(m_userContext, m_xboxLiveContextSettings, m_appConfig);
 #endif
@@ -286,24 +283,6 @@ achievements::achievement_service&
 xbox_live_context_impl::achievement_service()
 {
     return m_achievementService;
-}
-
-multiplayer::multiplayer_service&
-xbox_live_context_impl::multiplayer_service()
-{
-    return m_multiplayerService;
-}
-
-matchmaking::matchmaking_service&
-xbox_live_context_impl::matchmaking_service()
-{
-    return m_matchmakingService;
-}
-
-tournaments::tournament_service&
-xbox_live_context_impl::tournament_service()
-{
-    return m_tournamentService;
 }
 
 user_statistics::user_statistics_service&
