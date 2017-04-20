@@ -184,9 +184,7 @@
     <ClCompile Include="..\..\Source\Services\Misc\UWP\title_callable_ui.cpp" />
     <ClCompile Include="..\..\Source\Services\Misc\verify_string_result.cpp" />
     <ClCompile Include="..\..\Source\Services\Misc\Windows\notification_service_windows.cpp" />
-    <ClCompile Include="..\..\Source\Services\Misc\WinRT\StringService_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Misc\WinRT\TitleCallableUI_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Misc\WinRT\XboxLiveHttpCall_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Multiplayer\multiplayer_activity_details.cpp" />
     <ClCompile Include="..\..\Source\Services\Multiplayer\multiplayer_activity_handle_post_request.cpp" />
     <ClCompile Include="..\..\Source\Services\Multiplayer\multiplayer_activity_query_post_request.cpp" />
@@ -451,11 +449,7 @@
     <ClInclude Include="..\..\Source\Services\Leaderboard\leaderboard_serializers.h" />
     <ClInclude Include="..\..\Source\Services\Misc\contextual_config_result.h" />
     <ClInclude Include="..\..\Source\Services\Misc\notification_service.h" />
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\StringService_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Misc\WinRT\TitleCallableUI_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\VerifyStringResultCode_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\VerifyStringResult_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\XboxLiveHttpCall_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Multiplayer\multiplayer_internal.h" />
     <ClInclude Include="..\..\Source\Services\Presence\presence_internal.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\DevicePresenceChangeEventArgs_WinRT.h" />

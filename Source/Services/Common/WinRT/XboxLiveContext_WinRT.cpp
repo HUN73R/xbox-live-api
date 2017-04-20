@@ -117,10 +117,6 @@ XboxLiveContext::Initialize()
         m_cppObj->entertainment_profile_list_service()
         );
 #endif
-    m_stringService = ref new System::StringService(
-        m_cppObj->string_service()
-        );
-
 }
 
 Social::ProfileService^ 
@@ -163,12 +159,6 @@ TitleStorage::TitleStorageService^
 XboxLiveContext::TitleStorageService::get()
 {
     return m_titleStorageService;
-}
-
-System::StringService^
-XboxLiveContext::StringService::get()
-{
-    return m_stringService;
 }
 
 #if UWP_API

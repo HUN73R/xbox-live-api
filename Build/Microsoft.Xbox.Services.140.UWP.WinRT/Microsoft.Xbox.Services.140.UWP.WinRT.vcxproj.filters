@@ -462,9 +462,6 @@
     <ClCompile Include="..\..\Source\Services\Misc\verify_string_result.cpp">
       <Filter>C++ Source\Misc</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Misc\WinRT\StringService_WinRT.cpp">
-      <Filter>C++ Source\Misc\WinRT</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Shared\xbox_system_factory.cpp">
       <Filter>C++ Source\Shared</Filter>
     </ClCompile>
@@ -479,9 +476,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\System\user_impl_idp.cpp">
       <Filter>C++ Source\System</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Misc\WinRT\XboxLiveHttpCall_WinRT.cpp">
-      <Filter>C++ Source\Misc\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Shared\WinRT\AppConfiguration_WinRT.cpp">
       <Filter>C++ Source\Shared\WinRT Source</Filter>
@@ -1172,20 +1166,11 @@
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceDeviceRecord_WinRT.h">
       <Filter>C++ Source\Presence\WinRT</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\StringService_WinRT.h">
-      <Filter>C++ Source\Misc\WinRT</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Shared\xbox_system_factory.h">
       <Filter>C++ Source\Shared</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\http_call.h">
       <Filter>C++ Public Includes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\VerifyStringResult_WinRT.h">
-      <Filter>C++ Source\Misc\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\XboxLiveHttpCall_WinRT.h">
-      <Filter>C++ Source\Misc\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Shared\telemetry.h">
       <Filter>C++ Source\Shared</Filter>
@@ -1219,9 +1204,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeSubscription_WinRT.h">
       <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\VerifyStringResultCode_WinRT.h">
-      <Filter>C++ Source\Misc\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\System\WinRT\SignInResult_WinRT.h">
       <Filter>C++ Source\System\WinRT Source</Filter>
