@@ -82,10 +82,6 @@ XboxLiveContext::Initialize()
         m_cppObj->achievement_service()
         );
 
-    m_leaderboardService = ref new Leaderboard::LeaderboardService(
-        m_cppObj->leaderboard_service()
-        );
-
     m_realTimeActivityService = ref new RealTimeActivity::RealTimeActivityService(
         m_cppObj->real_time_activity_service()
         );
@@ -159,12 +155,6 @@ Achievements::AchievementService^
 XboxLiveContext::AchievementService::get()
 {
     return m_achievementService;
-}
-
-Leaderboard::LeaderboardService^
-XboxLiveContext::LeaderboardService::get()
-{
-    return m_leaderboardService;
 }
 
 UserStatistics::UserStatisticsService^

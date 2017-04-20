@@ -10,7 +10,6 @@
 #include "ReputationService_WinRT.h"
 #include "AppConfiguration_WinRT.h"
 #include "Achievementservice_WinRT.h"
-#include "LeaderboardService.h"
 #include "UserStatisticsService_WinRT.h"
 #include "XboxLiveContextSettings_WinRT.h"
 #include "RealTimeActivityService_WinRT.h"
@@ -76,12 +75,7 @@ public:
     /// Returns object containing access methods to the Xbox Achievement service.
     /// </summary>
     property Achievements::AchievementService^ AchievementService { Achievements::AchievementService^ get(); }
-
-    /// <summary>
-    /// Returns object containing access methods to the Xbox Leaderboard service.
-    /// </summary>
-    property Leaderboard::LeaderboardService^ LeaderboardService { Leaderboard::LeaderboardService^ get(); }
-
+	
     /// <summary>
     /// Returns object containing access methods to the Xbox User Stats service.
     /// </summary>
@@ -159,7 +153,6 @@ private:
     Social::SocialService^ m_socialService;
     Social::ReputationService^ m_reputationService;
     Achievements::AchievementService^ m_achievementService;
-    Leaderboard::LeaderboardService^ m_leaderboardService;
     UserStatistics::UserStatisticsService^ m_userStatisticsService;
     RealTimeActivity::RealTimeActivityService^ m_realTimeActivityService;
     Presence::PresenceService^ m_presenceService;

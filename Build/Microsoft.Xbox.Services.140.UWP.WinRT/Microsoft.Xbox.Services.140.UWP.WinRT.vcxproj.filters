@@ -31,9 +31,6 @@
     <Filter Include="C++ Source\Leaderboard">
       <UniqueIdentifier>{1c135ef4-998b-4085-8511-0e0df5c9276d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="C++ Source\Leaderboard\WinRT">
-      <UniqueIdentifier>{edd1d7ab-f093-474a-9dad-5ca99752ff83}</UniqueIdentifier>
-    </Filter>
     <Filter Include="C++ Source\Achievements\WinRT">
       <UniqueIdentifier>{7f530c4d-dae5-43e8-a01b-8cc3f35ca5de}</UniqueIdentifier>
     </Filter>
@@ -102,9 +99,6 @@
     </Filter>
     <Filter Include="C++ Source\Stats">
       <UniqueIdentifier>{e88ff49d-e3d7-4536-80b6-5842b4be4b53}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="C++ Source\Stats\WinRT">
-      <UniqueIdentifier>{ae73b9a9-8db5-47f0-a7b6-08e1b66d8bf5}</UniqueIdentifier>
     </Filter>
     <Filter Include="C++ Source\Multiplayer">
       <UniqueIdentifier>{7e80026b-5bf6-4b69-91bc-b119b49ace69}</UniqueIdentifier>
@@ -227,18 +221,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Leaderboard\leaderboard_service.cpp">
       <Filter>C++ Source\Leaderboard</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardColumn.cpp">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardResult.cpp">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardRow.cpp">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardService.cpp">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Achievements\achievement.cpp">
       <Filter>C++ Source\Achievements</Filter>
@@ -588,9 +570,6 @@
     <ClCompile Include="..\..\Source\System\xbox_live_mutex.cpp">
       <Filter>C++ Source\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Multiplayer\Manager\host_changed_event_args.cpp">
-      <Filter>C++ Source\Multiplayer\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Shared\local_config.cpp">
       <Filter>C++ Source\Shared</Filter>
     </ClCompile>
@@ -783,15 +762,6 @@
     <ClCompile Include="..\..\Source\Shared\call_buffer_timer.cpp">
       <Filter>C++ Source\Shared</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticEvent_WinRT.cpp">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticManager_WinRT.cpp">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticValue_WinRT.cpp">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Services\Misc\WinRT\TitleCallableUI_WinRT.cpp">
       <Filter>C++ Source\Misc\WinRT</Filter>
     </ClCompile>
@@ -803,12 +773,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Stats\Manager\leaderboard_result_event_args.cpp">
       <Filter>C++ Source\Stats</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\Manager\WinRT\LeaderboardQuery_WinRT.cpp">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\Manager\WinRT\LeaderboardResultEventArgs_WinRT.cpp">
-      <Filter>C++ Source\Stats\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Multiplayer\multiplayer_activity_details.cpp">
       <Filter>C++ Source\Multiplayer</Filter>
@@ -1097,18 +1061,6 @@
     <ClInclude Include="..\..\Source\Services\Leaderboard\leaderboard_serializers.h">
       <Filter>C++ Source\Leaderboard</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardColumn.h">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardResult.h">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardRow.h">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Leaderboard\WinRT\LeaderboardService.h">
-      <Filter>C++ Source\Leaderboard\WinRT</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\leaderboard.h">
       <Filter>C++ Public Includes</Filter>
     </ClInclude>
@@ -1373,9 +1325,6 @@
     <ClInclude Include="..\..\Source\Services\Misc\WinRT\TitleCallableUI_WinRT.h">
       <Filter>C++ Source\Misc\WinRT</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Multiplayer\Manager\multiplayer_manager_internal.h">
-      <Filter>C++ Source\Multiplayer\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Shared\http_call_impl.h">
       <Filter>C++ Source\Shared</Filter>
     </ClInclude>
@@ -1523,38 +1472,11 @@
     <ClInclude Include="..\..\Source\Shared\call_buffer_timer.h">
       <Filter>C++ Source\Shared</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticDataType_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticEvent_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticEventType_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticManager_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticValue_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\title_callable_ui.h">
       <Filter>C++ Public Includes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Misc\WinRT\TitleCallableUI_WinRT.h">
       <Filter>C++ Source\Misc\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\LeaderboardQuery_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\SortOrder_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\LeaderboardResultEventArgs_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\Manager\WinRT\StatisticEventArgs_WinRT.h">
-      <Filter>C++ Source\Stats\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\tournaments.h">
       <Filter>C++ Public Includes</Filter>
