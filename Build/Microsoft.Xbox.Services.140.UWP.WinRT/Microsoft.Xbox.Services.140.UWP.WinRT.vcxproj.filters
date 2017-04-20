@@ -126,15 +126,6 @@
     <ClCompile Include="..\..\Source\Shared\WinRT\Event_WinRT.cpp">
       <Filter>C++ Source\Shared\WinRT Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\SocialService_WinRT.cpp">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationship_WinRT.cpp">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationshipResult_WinRT.cpp">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\System\auth_config.cpp">
       <Filter>C++ Source\System</Filter>
     </ClCompile>
@@ -915,15 +906,6 @@
       <Filter>C++ Source\Social\WinRT Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationship_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialService_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationship_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationshipResult_WinRT.h">
       <Filter>C++ Source\Social\WinRT Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\services.h">

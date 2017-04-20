@@ -94,10 +94,6 @@ XboxLiveContext::Initialize()
         m_cppObj->title_storage_service()
         );
 
-    m_socialService = ref new Microsoft::Xbox::Services::Social::SocialService(
-        m_cppObj->social_service()
-        );
-
 #if UWP_API
     m_eventsService = ref new Events::EventsService(
         m_cppObj->events_service()
@@ -123,12 +119,6 @@ Social::ProfileService^
 XboxLiveContext::ProfileService::get()
 { 
     return m_profileService;
-}
-
-Social::SocialService^
-XboxLiveContext::SocialService::get()
-{
-    return m_socialService;
 }
 
 Social::ReputationService^ 

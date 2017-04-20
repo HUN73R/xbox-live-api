@@ -291,9 +291,6 @@
     <ClCompile Include="..\..\Source\Services\Social\WinRT\ReputationService_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeEventArgs_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeSubscription_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\SocialService_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationshipResult_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationship_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Social\WinRT\XboxUserProfile_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Common\WinRT\pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
@@ -501,9 +498,6 @@
     <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeEventArgs_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeSubscription_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationship_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialService_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationshipResult_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\XboxSocialRelationship_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Social\WinRT\XboxUserProfile_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Common\WinRT\pch.h" />
     <ClInclude Include="..\..\Source\Services\Common\WinRT\XboxLiveContext_WinRT.h" />
