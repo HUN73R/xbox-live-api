@@ -86,12 +86,6 @@ XboxLiveContext::Initialize()
         m_cppObj->real_time_activity_service()
         );
 
-
-    m_userStatisticsService = ref new UserStatistics::UserStatisticsService(
-        m_cppObj->user_statistics_service()
-        );
-
-
     m_presenceService = ref new Presence::PresenceService(
         m_cppObj->presence_service()
         );
@@ -151,12 +145,6 @@ Achievements::AchievementService^
 XboxLiveContext::AchievementService::get()
 {
     return m_achievementService;
-}
-
-UserStatistics::UserStatisticsService^
-XboxLiveContext::UserStatisticsService::get()
-{
-    return m_userStatisticsService;
 }
 
 RealTimeActivity::RealTimeActivityService^

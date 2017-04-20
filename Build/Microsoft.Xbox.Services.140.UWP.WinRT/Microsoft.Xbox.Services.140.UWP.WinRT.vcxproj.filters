@@ -73,9 +73,6 @@
     <Filter Include="C++ Source\UserStats">
       <UniqueIdentifier>{e787eb28-a6d4-4b09-a3ea-f3e05aba564e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="C++ Source\UserStats\WinRT">
-      <UniqueIdentifier>{4d2eb7c6-1fb6-4a9d-a7a7-b955c0e3e647}</UniqueIdentifier>
-    </Filter>
     <Filter Include="C++ Source\Events">
       <UniqueIdentifier>{79801b79-464b-4dc6-876b-395068ae96ab}</UniqueIdentifier>
     </Filter>
@@ -255,21 +252,6 @@
     <ClCompile Include="..\..\Source\Services\Stats\user_statistics_service.cpp">
       <Filter>C++ Source\UserStats</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\RequestedStatistics_WinRT.cpp">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\ServiceConfigurationStatistic_WinRT.cpp">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\Statistic_WinRT.cpp">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\UserStatisticsResult_WinRT.cpp">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\UserStatisticsService_WinRT.cpp">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Services\Social\WinRT\ReputationService_WinRT.cpp">
       <Filter>C++ Source\Social\WinRT Source</Filter>
     </ClCompile>
@@ -348,9 +330,6 @@
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceTitleRecord_WinRT.cpp">
       <Filter>C++ Source\Presence\WinRT</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\StatisticChangeSubscription_WinRT.cpp">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_subscription.cpp">
       <Filter>C++ Source\RTA</Filter>
     </ClCompile>
@@ -365,9 +344,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Presence\device_presence_change_event_args.cpp">
       <Filter>C++ Source\Presence</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\StatisticChangeEventArgs_WinRT.cpp">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Presence\title_presence_change_event_args.cpp">
       <Filter>C++ Source\Presence</Filter>
@@ -1049,21 +1025,6 @@
     <ClInclude Include="..\..\Source\Services\Leaderboard\leaderboard_query.h">
       <Filter>C++ Source\Leaderboard</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\RequestedStatistics_WinRT.h">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\ServiceConfigurationStatistic_WinRT.h">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\Statistic_WinRT.h">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\UserStatisticsResult_WinRT.h">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\UserStatisticsService_WinRT.h">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\user_statistics.h">
       <Filter>C++ Public Includes</Filter>
     </ClInclude>
@@ -1136,17 +1097,11 @@
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\UserPresenceState_WinRT.h">
       <Filter>C++ Source\Presence\WinRT</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\StatisticChangeSubscription_WinRT.h">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Shared\web_socket_connection.h">
       <Filter>C++ Source\Shared</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Shared\web_socket_connection_state.h">
       <Filter>C++ Source\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\StatisticChangeEventArgs_WinRT.h">
-      <Filter>C++ Source\UserStats\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\game_server_platform.h">
       <Filter>C++ Public Includes</Filter>

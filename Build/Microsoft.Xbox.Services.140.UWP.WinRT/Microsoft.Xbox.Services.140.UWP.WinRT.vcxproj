@@ -320,13 +320,6 @@
     <ClCompile Include="..\..\Source\Services\Stats\user_statistics_result.cpp" />
     <ClCompile Include="..\..\Source\Services\Stats\user_statistics_service.cpp" />
     <ClCompile Include="..\..\Source\Services\Stats\user_statistics_service_impl.cpp" />
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\RequestedStatistics_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\ServiceConfigurationStatistic_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\StatisticChangeEventArgs_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\StatisticChangeSubscription_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\Statistic_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\UserStatisticsResult_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Stats\WinRT\UserStatisticsService_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\TitleStorage\title_storage_blob_metadata.cpp" />
     <ClCompile Include="..\..\Source\Services\TitleStorage\title_storage_blob_metadata_result.cpp" />
     <ClCompile Include="..\..\Source\Services\TitleStorage\title_storage_blob_result.cpp" />
@@ -522,13 +515,6 @@
     <ClInclude Include="..\..\Source\Services\Common\WinRT\XboxLiveContext_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Stats\Manager\stats_manager_internal.h" />
     <ClInclude Include="..\..\Source\Services\Stats\user_statistics_internal.h" />
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\RequestedStatistics_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\ServiceConfigurationStatistic_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\StatisticChangeEventArgs_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\StatisticChangeSubscription_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\Statistic_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\UserStatisticsResult_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Stats\WinRT\UserStatisticsService_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\TitleStorage\WinRT\TitleStorageBlobMetadataResult_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\TitleStorage\WinRT\TitleStorageBlobMetadata_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\TitleStorage\WinRT\TitleStorageBlobResult_WinRT.h" />
