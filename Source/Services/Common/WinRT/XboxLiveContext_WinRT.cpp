@@ -74,10 +74,6 @@ XboxLiveContext::Initialize()
         m_cppObj->profile_service()
         );
 
-    m_reputationService = ref new Microsoft::Xbox::Services::Social::ReputationService(
-        m_cppObj->reputation_service()
-        );
-
     m_achievementService = ref new Microsoft::Xbox::Services::Achievements::AchievementService(
         m_cppObj->achievement_service()
         );
@@ -119,12 +115,6 @@ Social::ProfileService^
 XboxLiveContext::ProfileService::get()
 { 
     return m_profileService;
-}
-
-Social::ReputationService^ 
-XboxLiveContext::ReputationService::get()
-{ 
-    return m_reputationService;
 }
 
 Achievements::AchievementService^

@@ -6,7 +6,6 @@
 #include "User_WinRT.h"
 #endif
 #include "ProfileService_WinRT.h"
-#include "ReputationService_WinRT.h"
 #include "AppConfiguration_WinRT.h"
 #include "Achievementservice_WinRT.h"
 #include "XboxLiveContextSettings_WinRT.h"
@@ -56,11 +55,6 @@ public:
     /// Returns object containing access methods to the Xbox Profile service.
     /// </summary>
     property Social::ProfileService^ ProfileService { Social::ProfileService^ get(); }
-
-    /// <summary>
-    /// Returns object containing access methods to the Xbox Reputation service.
-    /// </summary>
-    property Social::ReputationService^ ReputationService { Social::ReputationService^ get(); }
 
     /// <summary>
     /// Returns object containing access methods to the Xbox Achievement service.
@@ -126,7 +120,6 @@ private:
     Microsoft::Xbox::Services::XboxLiveContextSettings^ m_xboxLiveContextSettings;
     Microsoft::Xbox::Services::XboxLiveAppConfiguration^ m_appConfig;
     Social::ProfileService^ m_profileService;
-    Social::ReputationService^ m_reputationService;
     Achievements::AchievementService^ m_achievementService;
     RealTimeActivity::RealTimeActivityService^ m_realTimeActivityService;
     Presence::PresenceService^ m_presenceService;

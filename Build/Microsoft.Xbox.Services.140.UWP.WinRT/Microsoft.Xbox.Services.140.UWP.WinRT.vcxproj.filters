@@ -243,9 +243,6 @@
     <ClCompile Include="..\..\Source\Services\Stats\user_statistics_service.cpp">
       <Filter>C++ Source\UserStats</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\ReputationService_WinRT.cpp">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Services\Social\reputation_feedback_request.cpp">
       <Filter>C++ Source\Social</Filter>
     </ClCompile>
@@ -497,12 +494,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Common\xbox_live_context_impl.cpp">
       <Filter>C++ Source\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeEventArgs_WinRT.cpp">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeSubscription_WinRT.cpp">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Social\social_relationship_change_event_args.cpp">
       <Filter>C++ Source\Social</Filter>
@@ -902,12 +893,6 @@
     <ClInclude Include="..\..\Source\Shared\WinRT\Event_WinRT.h">
       <Filter>C++ Source\Shared\WinRT Source</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialGroupConstants_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationship_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\services.h">
       <Filter>C++ Public Includes</Filter>
     </ClInclude>
@@ -1003,12 +988,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\user_statistics.h">
       <Filter>C++ Public Includes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\ReputationFeedbackType_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\ReputationService_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Shared\WinRT\XboxServiceCallRoutedEventArgs_WinRT.h">
       <Filter>C++ Source\Shared\WinRT Source</Filter>
@@ -1181,12 +1160,6 @@
     <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionErrorEventArgs_WinRT.h">
       <Filter>C++ Source\RTA\WinRT</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeEventArgs_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialRelationshipChangeSubscription_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\System\WinRT\SignInResult_WinRT.h">
       <Filter>C++ Source\System\WinRT Source</Filter>
     </ClInclude>
@@ -1270,9 +1243,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\social_manager.h">
       <Filter>C++ Public Includes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Social\WinRT\SocialNotificationType_WinRT.h">
-      <Filter>C++ Source\Social\WinRT Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Social\WinRT\PresenceFilter_WinRT.h">
       <Filter>C++ Source\Social\WinRT Source</Filter>
