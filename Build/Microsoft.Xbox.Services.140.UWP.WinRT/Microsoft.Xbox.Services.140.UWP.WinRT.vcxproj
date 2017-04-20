@@ -253,11 +253,6 @@
     <ClCompile Include="..\..\Source\Services\Privacy\permission_check_result.cpp" />
     <ClCompile Include="..\..\Source\Services\Privacy\permission_deny_reason.cpp" />
     <ClCompile Include="..\..\Source\Services\Privacy\privacy_service.cpp" />
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\MultiplePermissionsCheckResult_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PermissionCheckResult_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PermissionDenyReason_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PermissionIdConstants_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PrivacyService_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_service.cpp" />
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_service_factory.cpp" />
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_subscription.cpp" />
@@ -487,11 +482,6 @@
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\TitlePresenceChangeSubscription_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\TitlePresenceState_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\UserPresenceState_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\MultiplePermissionsCheckResult_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PermissionCheckResult_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PermissionDenyReason_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PermissionIdConstants_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PrivacyService_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\RealTimeActivity\real_time_activity_internal.h" />
     <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityConnectionState_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityResyncEventArgs_WinRT.h" />

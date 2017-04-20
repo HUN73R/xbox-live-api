@@ -58,9 +58,6 @@
     <Filter Include="C++ Source\Privacy">
       <UniqueIdentifier>{23feaf85-09ae-4ec0-ab50-213e820a2977}</UniqueIdentifier>
     </Filter>
-    <Filter Include="C++ Source\Privacy\WinRT">
-      <UniqueIdentifier>{5c87eff6-df34-46d1-b063-7d1738abdcdf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="C++ Source\Shared">
       <UniqueIdentifier>{a10dda2a-8d3d-4d37-aa6c-b8200939bb72}</UniqueIdentifier>
     </Filter>
@@ -468,18 +465,6 @@
     <ClCompile Include="..\..\Source\Services\Privacy\privacy_service.cpp">
       <Filter>C++ Source\Privacy</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\MultiplePermissionsCheckResult_WinRT.cpp">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PermissionCheckResult_WinRT.cpp">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PermissionDenyReason_WinRT.cpp">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PrivacyService_WinRT.cpp">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Shared\utils_locales.cpp">
       <Filter>C++ Source\Shared</Filter>
     </ClCompile>
@@ -662,9 +647,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Social\Manager\WinRT\XboxSocialUser_WinRT.cpp">
       <Filter>C++ Source\Social\Manager\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Privacy\WinRT\PermissionIdConstants_WinRT.cpp">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Shared\Logger\Log.cpp">
       <Filter>C++ Source\Shared\Logger</Filter>
@@ -1228,21 +1210,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\http_call_request_message.h">
       <Filter>C++ Public Includes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\MultiplePermissionsCheckResult_WinRT.h">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PermissionCheckResult_WinRT.h">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PermissionDenyReason_WinRT.h">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PermissionIdConstants_WinRT.h">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Privacy\WinRT\PrivacyService_WinRT.h">
-      <Filter>C++ Source\Privacy\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\errors.h">
       <Filter>C++ Public Includes</Filter>

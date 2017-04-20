@@ -15,7 +15,6 @@
 #include "RealTimeActivityService_WinRT.h"
 #include "PresenceService_WinRT.h"
 #include "TitleStorageService_WinRT.h"
-#include "PrivacyService_WinRT.h"
 #include "StringService_WinRT.h"
 #include "EventsService_WinRT.h"
 #if TV_API || UNIT_TEST_SERVICES
@@ -97,11 +96,6 @@ public:
     property TitleStorage::TitleStorageService^ TitleStorageService{ TitleStorage::TitleStorageService^ get(); }
 
     /// <summary>
-    /// Returns object containing access methods to the Privacy service.
-    /// </summary>
-    property Privacy::PrivacyService^ PrivacyService { Privacy::PrivacyService^ get(); }
-
-    /// <summary>
     /// Returns object containing access methods to the Xbox String service.
     /// </summary>
     property System::StringService^ StringService { System::StringService^ get(); }
@@ -157,7 +151,6 @@ private:
     RealTimeActivity::RealTimeActivityService^ m_realTimeActivityService;
     Presence::PresenceService^ m_presenceService;
     TitleStorage::TitleStorageService^ m_titleStorageService;
-    Privacy::PrivacyService^ m_privacyService;
     System::StringService^ m_stringService;
 #if UWP_API
     Events::EventsService^ m_eventsService;

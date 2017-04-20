@@ -100,10 +100,6 @@ XboxLiveContext::Initialize()
         m_cppObj->title_storage_service()
         );
 
-    m_privacyService = ref new Privacy::PrivacyService(
-        m_cppObj->privacy_service()
-        );
-
     m_socialService = ref new Microsoft::Xbox::Services::Social::SocialService(
         m_cppObj->social_service()
         );
@@ -179,12 +175,6 @@ TitleStorage::TitleStorageService^
 XboxLiveContext::TitleStorageService::get()
 {
     return m_titleStorageService;
-}
-
-Privacy::PrivacyService^
-XboxLiveContext::PrivacyService::get()
-{
-    return m_privacyService;
 }
 
 System::StringService^
