@@ -241,7 +241,6 @@
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceBroadcastRecord_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceData_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceDeviceRecord_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceMediaRecord_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceRecord_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceService_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceTitleRecord_WinRT.cpp" />
@@ -255,9 +254,6 @@
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_service_factory.cpp" />
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_subscription.cpp" />
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_subscription_error_event_args.cpp" />
-    <ClCompile Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityResyncEventArgs_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityService_WinRT.cpp" />
-    <ClCompile Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionErrorEventArgs_WinRT.cpp" />
     <ClCompile Include="..\..\Source\Services\Social\Manager\internal_social_event.cpp" />
     <ClCompile Include="..\..\Source\Services\Social\Manager\peoplehub_service.cpp" />
     <ClCompile Include="..\..\Source\Services\Social\Manager\preferred_color.cpp" />
@@ -454,7 +450,6 @@
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceDeviceRecord_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceDeviceType_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceMediaIdType_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceMediaRecord_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceRecord_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceService_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceTitleRecord_WinRT.h" />
@@ -464,11 +459,6 @@
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\TitlePresenceState_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\UserPresenceState_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\RealTimeActivity\real_time_activity_internal.h" />
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityConnectionState_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityResyncEventArgs_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityService_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionErrorEventArgs_WinRT.h" />
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionError_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionState_WinRT.h" />
     <ClInclude Include="..\..\Source\Services\Social\Manager\social_manager_internal.h" />
     <ClInclude Include="..\..\Source\Services\Social\Manager\WinRT\SocialEventArgs_WinRT.h" />

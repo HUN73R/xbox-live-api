@@ -9,7 +9,6 @@
 #include "AppConfiguration_WinRT.h"
 #include "Achievementservice_WinRT.h"
 #include "XboxLiveContextSettings_WinRT.h"
-#include "RealTimeActivityService_WinRT.h"
 #include "PresenceService_WinRT.h"
 #include "TitleStorageService_WinRT.h"
 #include "EventsService_WinRT.h"
@@ -60,11 +59,6 @@ public:
     /// Returns object containing access methods to the Xbox Achievement service.
     /// </summary>
     property Achievements::AchievementService^ AchievementService { Achievements::AchievementService^ get(); }
-
-    /// <summary>
-    /// Returns object containing access methods to the Xbox Real Time Activity service.
-    /// </summary>
-    property RealTimeActivity::RealTimeActivityService^ RealTimeActivityService { RealTimeActivity::RealTimeActivityService^ get(); }
 
     /// <summary>
     /// Returns object containing access methods to the Presence service.
@@ -121,7 +115,6 @@ private:
     Microsoft::Xbox::Services::XboxLiveAppConfiguration^ m_appConfig;
     Social::ProfileService^ m_profileService;
     Achievements::AchievementService^ m_achievementService;
-    RealTimeActivity::RealTimeActivityService^ m_realTimeActivityService;
     Presence::PresenceService^ m_presenceService;
     TitleStorage::TitleStorageService^ m_titleStorageService;
 #if UWP_API

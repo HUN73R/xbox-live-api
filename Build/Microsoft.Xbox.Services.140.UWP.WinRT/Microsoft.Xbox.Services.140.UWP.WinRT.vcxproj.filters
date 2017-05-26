@@ -264,9 +264,6 @@
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_service.cpp">
       <Filter>C++ Source\RTA</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityService_WinRT.cpp">
-      <Filter>C++ Source\RTA\WinRT</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Services\Presence\presence_broadcast_record.cpp">
       <Filter>C++ Source\Presence</Filter>
     </ClCompile>
@@ -304,9 +301,6 @@
       <Filter>C++ Source\Presence\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceData_WinRT.cpp">
-      <Filter>C++ Source\Presence\WinRT</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceMediaRecord_WinRT.cpp">
       <Filter>C++ Source\Presence\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Presence\WinRT\PresenceRecord_WinRT.cpp">
@@ -471,9 +465,6 @@
     <ClCompile Include="..\..\Source\Shared\xbox_live_app_config.cpp">
       <Filter>C++ Source\Shared</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionErrorEventArgs_WinRT.cpp">
-      <Filter>C++ Source\RTA\WinRT</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Services\RealTimeActivity\real_time_activity_subscription_error_event_args.cpp">
       <Filter>C++ Source\RTA</Filter>
     </ClCompile>
@@ -536,9 +527,6 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Shared\WinRT\XboxLiveContextSettings_WinRT.cpp">
       <Filter>C++ Source\Shared\WinRT Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityResyncEventArgs_WinRT.cpp">
-      <Filter>C++ Source\RTA\WinRT</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Services\Misc\contextual_search_service.cpp">
       <Filter>C++ Source\Misc</Filter>
@@ -1013,9 +1001,6 @@
     <ClInclude Include="..\..\Include\xsapi\real_time_activity.h">
       <Filter>C++ Public Includes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityService_WinRT.h">
-      <Filter>C++ Source\RTA\WinRT</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\presence.h">
       <Filter>C++ Public Includes</Filter>
     </ClInclude>
@@ -1032,9 +1017,6 @@
       <Filter>C++ Source\Presence\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceMediaIdType_WinRT.h">
-      <Filter>C++ Source\Presence\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceMediaRecord_WinRT.h">
       <Filter>C++ Source\Presence\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\PresenceRecord_WinRT.h">
@@ -1078,9 +1060,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Presence\WinRT\TitlePresenceState_WinRT.h">
       <Filter>C++ Source\Presence\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityConnectionState_WinRT.h">
-      <Filter>C++ Source\RTA\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionState_WinRT.h">
       <Filter>C++ Source\RTA\WinRT</Filter>
@@ -1142,9 +1121,6 @@
     <ClInclude Include="..\..\Source\Services\Events\WinRT\EventsService_WinRT.h">
       <Filter>C++ Source\Events\WinRT</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Services\Misc\WinRT\XboxLiveHttpCall_WinRT.h">
-      <Filter>C++ Source\Misc\WinRT</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Shared\local_config.h">
       <Filter>C++ Source\Shared</Filter>
     </ClInclude>
@@ -1153,12 +1129,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Include\xsapi\xbox_live_app_config.h">
       <Filter>C++ Public Includes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionError_WinRT.h">
-      <Filter>C++ Source\RTA\WinRT</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivitySubscriptionErrorEventArgs_WinRT.h">
-      <Filter>C++ Source\RTA\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\System\WinRT\SignInResult_WinRT.h">
       <Filter>C++ Source\System\WinRT Source</Filter>
@@ -1207,9 +1177,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Shared\WinRT\XboxLiveContextSettings_WinRT.h">
       <Filter>C++ Source\Shared\WinRT Source</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Services\RealTimeActivity\WinRT\RealTimeActivityResyncEventArgs_WinRT.h">
-      <Filter>C++ Source\RTA\WinRT</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Services\Misc\contextual_config_result.h">
       <Filter>C++ Source\Misc</Filter>

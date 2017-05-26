@@ -78,10 +78,6 @@ XboxLiveContext::Initialize()
         m_cppObj->achievement_service()
         );
 
-    m_realTimeActivityService = ref new RealTimeActivity::RealTimeActivityService(
-        m_cppObj->real_time_activity_service()
-        );
-
     m_presenceService = ref new Presence::PresenceService(
         m_cppObj->presence_service()
         );
@@ -121,12 +117,6 @@ Achievements::AchievementService^
 XboxLiveContext::AchievementService::get()
 {
     return m_achievementService;
-}
-
-RealTimeActivity::RealTimeActivityService^
-XboxLiveContext::RealTimeActivityService::get()
-{
-    return m_realTimeActivityService;
 }
 
 Presence::PresenceService^
