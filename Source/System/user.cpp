@@ -95,6 +95,18 @@ xbox_live_user::xbox_live_user(Windows::System::User^ systemUser)
     m_user_impl = user_factory::create_user_impl(systemUser);
 }
 
+pplx::task<xbox_live_result<sign_in_result>>
+xbox_live_user::switch_account(_In_opt_ Platform::Object^ coreDispatcherObj)
+{
+	xbox_live_context_settings::_Set_dispatcher(coreDispatcherObj);
+	return m_user_impl->switch_account();
+}
+#else
+pplx::task<xbox_live_result<sign_in_result>>
+xbox_live_user::switch_account()
+{
+	return m_user_impl->switch_account();
+}
 #endif
 
 xbox_live_user::xbox_live_user()

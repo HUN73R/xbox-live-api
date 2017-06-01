@@ -29,6 +29,8 @@ public:
     virtual pplx::task<XBOX_LIVE_NAMESPACE::xbox_live_result<void>> signout() = 0;
 #endif
 
+	virtual pplx::task<XBOX_LIVE_NAMESPACE::xbox_live_result<sign_in_result>> switch_account() { return pplx::task_from_exception<XBOX_LIVE_NAMESPACE::xbox_live_result<sign_in_result>>(std::exception()); }
+
     virtual pplx::task<xbox_live_result<void>> sign_in_impl(
         _In_ const string_t& userDelegationTicket,
         _In_ bool forceRefresh
@@ -139,6 +141,8 @@ public:
         _In_ bool forceRefresh
         ) override;
 
+	pplx::task<XBOX_LIVE_NAMESPACE::xbox_live_result<sign_in_result>> switch_account() override;
+
     // Not supported for user_impl_idp
     pplx::task<XBOX_LIVE_NAMESPACE::xbox_live_result<void>> sign_in_impl(
         _In_ const string_t& userDelegationTicket,
@@ -224,6 +228,9 @@ public:
         _In_ bool showUI,
         _In_ bool forceRefresh
         ) override;
+
+	// Not supported for user_impl_server
+	pplx::task<xbox::services::xbox_live_result<sign_in_result>> switch_account() override;
 
     pplx::task<xbox::services::xbox_live_result<void>> sign_in_impl(
         _In_ const string_t& userDelegationTicket,
